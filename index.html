@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCTP Assignment</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1 class="blue">REDACTR</h1>
+    <form action="/">
+        <label for="content">Main Content</label>
+        <textarea name="content" id="content" cols="30" rows="10" required></textarea>
+
+        <label for="redact">Redacted Words (Space Seperated)</label>
+        <input type="text" name="redact" id="redact" required>
+
+        <label for="redactSymbol">Redact Symbol</label>
+        <input type="text" name="redactSymbol" id="redactSymbol">
+
+        <button type="submit">Redact Now</button>
+    </form>
+
+    <section class="stats" style="display: none;">
+        <h2 class="blue">OUTPUT</h2>
+        <p class="output"></p>
+
+        <h2 class="blue">Statistics</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Redacted Word</th>
+                    <th>Number of Occurence</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <h3 style="margin-top: 20px;"><span class="blue">Time taken:</span> <span class="time"></span></h3>
+        <h3><span class="blue">Scanned words:</span> <span class="scanned-words"></span></h3>
+        <h3><span class="blue">Matched words:</span> <span class="matched-words"></span></h3>
+        <h3><span class="blue">Scrambled characters:</span> <span class="scrambled-characters"></span></h3>
+
+    </section>
+
+    <section class="about">
+        <h2 class="blue" style="margin-top: 20px;">Tidbits about the app</h2>
+        <ul>
+            <li>If the redact symbol is one character, it will replace each letter of the redacted word with that
+                character</li>
+            <li>If the redact symbol is more than one character, it will replace the redacted word with that symbol</li>
+            <li>If you want to redact a word with a prefix punctuation such as sleep in "sleep", put a space between the
+                prefix punctuation and the first letter. That is, "sleep" becomes " sleep"</li>
+            <li>In the output, the redacted words are colored blue to show their location</li>
+            <li>Javascript is pretty fast. So if you want to see a higher time, enter a larger text into main content
+            </li>
+        </ul>
+    </section>
+    <h4 style="margin-top: 20px;"><span class="blue">Name:</span> Terver Torvenda</h4>
+    <h4><span class="blue">Email:</span> Tervenda18@gmail.com</h4>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: avenir;
+    src: url(Avenir\ Light.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: inter, sans-serif;
+    width: 100vw;
+    padding: 10px;
+}
+
+form{
+    margin: 30px auto;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 4px 14px rgba(51, 51, 51, 0.3);
+}
+
+input, label{
+    display: block;
+}
+
+input{
+    height: 30px;
+    width: 100%;
+    padding: 0px 5px;
+}
+
+textarea{
+    padding: 5px;
+    width: 100%;
+}
+
+input, button, textarea{
+    font-family: avenir, sans-serif;
+}
+
+input, textarea{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.blue{
+    color: blue;
+}
+
+h1, h2, h3, h4, table, tr, th, td{
+    text-align: center;
+}
+
+h2{
+    margin: 20px 0 5px;
+}
+
+table{
+    margin: auto;
+    border: 1px solid gray;
+    border-collapse: collapse;
+
+    margin-bottom: 10px;
+}
+
+td, th{
+    border: 1px solid gray;
+    padding: 5px 10px;
+}
+
+ul{
+    margin: auto;
+    width: 90%;
+    max-width: 700px;
+}
+
+button{
+    display: block;
+    margin: 10px auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-family: poppins, sans-serif;
+    cursor: pointer;
+}
+
+.stats{
+    width: 90vw;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 14px rgba(51, 51, 51, 0.3);
+    padding: 15px 10px;
+}
